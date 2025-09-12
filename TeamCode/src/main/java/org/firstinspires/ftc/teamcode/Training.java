@@ -37,8 +37,8 @@ public class Training {
         // directions!!!
         FrontLM.setDirection(DcMotorSimple.Direction.REVERSE);
         FrontRM.setDirection(DcMotorSimple.Direction.FORWARD);
-        BackRM.setDirection(DcMotorSimple.Direction.REVERSE);
-        BackLM.setDirection(DcMotorSimple.Direction.FORWARD);
+        BackLM.setDirection(DcMotorSimple.Direction.REVERSE);
+        BackRM.setDirection(DcMotorSimple.Direction.FORWARD);
 
 
         // set motor powers to 0
@@ -50,27 +50,27 @@ public class Training {
 
     public void forward() {
         // set powers for motors to go forward here
-//        FrontRM.setPower(0.5);
-//        FrontLM.setPower(0.5);
+        FrontRM.setPower(0.5);
+        FrontLM.setPower(0.5);
         BackRM.setPower(0.5);
-  //      BackLM.setPower(0.5);
+        BackLM.setPower(0.5);
     }
     public void backwards() {
         // set powers for motors to go backwards here
-//        FrontRM.setPower(-0.5);
-   //     FrontLM.setPower(-0.5);
+        FrontRM.setPower(-0.5);
+        FrontLM.setPower(-0.5);
         BackRM.setPower(-0.5);
-  //      BackLM.setPower(-0.5);
+        BackLM.setPower(-0.5);
     }
     public void left() {
-        // set powers for motors to go forward here
+        // set powers for motors to go left here
         FrontRM.setPower(-0.5);
         FrontLM.setPower(0.5);
         BackRM.setPower(-0.5);
         BackLM.setPower(0.5);
     }
     public void right() {
-        // set powers for motors to go forward here
+        // set powers for motors to go right here
         FrontRM.setPower(0.5);
         FrontLM.setPower(-0.5);
         BackRM.setPower(0.5);
