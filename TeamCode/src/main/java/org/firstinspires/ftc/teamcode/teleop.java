@@ -12,7 +12,7 @@ public class teleop extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
 
-        double speed = .5;
+        double speed = 1;
         // this sets the speed
 
         Training Train = new Training();
